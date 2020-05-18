@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Luna';
+    src: url('../fonts/Luna.ttf');
+}
+@font-face {
+    font-family: 'Prime';
+    src: url('../fonts/Prime-Regular.ttf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 60px;
+}
+nav {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0px 20px;
+    position: fixed;
+    transition: all ease 0.5s;
+    font-family: 'Luna';
+}

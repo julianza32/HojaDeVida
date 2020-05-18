@@ -1,0 +1,25 @@
+body{
+    font-family: 'Prime';
+    white-space: normal;
+    letter-spacing:2px;
+    font-weight: 300;
+    font-size: 18px;
+    height: 100vh;
+}
+.card{
+    border: 1px solid teal;
+    /* height: 426px; */
+}
+.card-image{
+    border-bottom: 1px solid teal;
+    /* height: 215px; */
+} 
+.imgCard{
+    width: 90px;
+}
+@media only screen and (max-width: 563px) {
+    .imgCard{
+        width: 200px;
+        height: 200px;
+    }
+}

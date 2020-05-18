@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/estilosCabecera.css">
+    <link rel="stylesheet" href="/css/estilosHobbies.css">
+    <link rel="stylesheet" href="/css/estilosPie.css">
+    <title>Experiencia</title>
+</head>
+
+<body class="black">
+    <div class="navbar-fixed">
+        <nav id="nav">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo"><img class="logo" src="icons/redragIcon.png" alt="Logo"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/">Sobre mi</a></li>
+                    <li><a href="/experiencia.html">Experiencia</a></li>
+                    <li><a href="/educacion.html">Educación</a></li>
+                    <li><a href="/aptitudes.html">Aptitudes</a></li>
+                    <li><a href="/hobbies.html">Hobbies</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav teal" id="mobile-demo">
+        <li><a class="white-text" href="/">Sobre mi</a></li>
+        <li><a class="white-text" href="/experiencia.html">Experiencia</a></li>
+        <li><a class="white-text" href="/educacion.html">Educación</a></li>
+        <li><a class="white-text" href="/aptitudes.html">Aptitudes</a></li>
+        <li><a class="white-text" href="/hobbies.html">Hobbies</a></li>
+    </ul>
+    <div class="container contenedor white-text">
+        <div class="row ">
+            <h3>Hobbies</h3>
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img class="imagen" src="img/img1.jpg"> <!-- random image -->
+                        <div class="caption primero">
+                            <h3>Uno de mis hobbies es montar bici!</h3>
+                            <h5 class="light grey-text text-lighten-3">ayuda a tu salud y al medio ambiente.</h5>
+                        </div>
+                    </li>   
+                    <li>
+                        <img class="imagen" src="img/img2.jpeg"> <!-- random image -->
+                        <div class="caption">
+                            <h3>La fotografia</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="imagen" src="img/img3.jpg"> <!-- random image -->
+                    </li>
+                    <li>
+                        <img class="imagen" src="img/img4.jpg"> <!-- random image -->
+                    </li>
+                    <li>
+                        <img class="imagen" src="img/img7.jpg"> <!-- random image -->
+                        <div class="caption center-align primero">
+                            <h3>Tambien me gustan los carros deportivos</h3>
+                            <h5 class="light grey-text text-lighten-3">Y la mecanica automotriz.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="imagen" src="img/img6.jpg"> <!-- random image -->
+                    </li>
+                    <li>
+                        <img class="imagen" src="img/img5.jpg"> <!-- random image -->
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer teal ">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Redes</h5>
+                    <p class="grey-text text-lighten-4">Aqui podras econtrar mis redes sociales.</p>
+                    <ul class="redes">
+                        <li class="redS"><a class="grey-text text-lighten-3" href="https://www.facebook.com/kevin.I.zarate.37"><img src="icons/facebook.png" alt="icono facebook"></a></li>
+                        <li class="redS"><a class="grey-text text-lighten-3" href="https://twitter.com/julianzarate13"><img src="icons/twitter.png" alt="icono twitter"></a></li>
+                        <li class="redS"><a class="grey-text text-lighten-3" href="https://www.instagram.com/hi_im_kevin32/"><img src="icons/instagram.png" alt="icono instagram"></a></li>
+                        <li class="redS"><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/kevin-zarate-7666a0158/"><img src="icons/linkedin.png"alt="icono linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Acerca de</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Terminos y condiciones</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Politicas de privacidad</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Derechos de autor</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Copyright - Kevin Zarate
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        let elems = document.querySelectorAll('.sidenav');
+        let instances = M.Sidenav.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems, {
+        indicators: false,
+        interval: 3000});
+  });
+
+    window.onscroll = function () { myFunction() };
+
+    let navbar = document.getElementById("nav");
+
+
+
+    function myFunction() {
+        if (window.pageYOffset >= 1) {
+            navbar.classList.add("teal");
+        } else {
+            navbar.classList.remove("teal");
+        }
+    }
+</script>
+
+</html>

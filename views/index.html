@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/estilosIndex.css">
+    <link rel="stylesheet" href="/css/estilosCabecera.css">
+    <link rel="stylesheet" href="/css/estilosPie.css">
+    <title>Hoja de vida</title>
+</head>
+
+<body class="black">
+    <div class="navbar-fixed">
+        <nav id="nav">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo"><img class="logo" src="icons/redragIcon.png" alt="Logo"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/">Sobre mi</a></li>
+                    <li><a href="/experiencia.html">Experiencia</a></li>
+                    <li><a href="/educacion.html">Educación</a></li>
+                    <li><a href="/aptitudes.html">Aptitudes</a></li>
+                    <li><a href="/hobbies.html">Hobbies</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav teal" id="mobile-demo">
+        <li><a class="white-text" href="/">Sobre mi</a></li>
+        <li><a class="white-text" href="/experiencia.html">Experiencia</a></li>
+        <li><a class="white-text" href="/educacion.html">Educación</a></li>
+        <li><a class="white-text" href="/aptitudes.html">Aptitudes</a></li>
+        <li><a class="white-text" href="/hobbies.html">Hobbies</a></li>
+    </ul>
+    <div class="parallax-container white-text center">
+        <div class="parallax"><img src="/img/IMG_20200515_092836.jpg"></div>
+        <h3 class="hojaDVida">Hola!!</h3>
+        <p>Yo soy Kevin Zarate</p>
+    </div>
+
+    <div class="black white-text justify">
+        <div class="container contenido row">
+            <div class="section texto col xl7 l7 m12 s12">
+                <h3>Sobre mi</h3>
+                <p class=" ">Soy estudiante del politecnico internacional a la espera de grado, actualmente estoy realizando un
+                    curso de programcion web fullsctack con las tecnologias Php, MySql, MongoDB, Node.js con el
+                    framawork de express. Apacionado por el desarrollo de soluciones tecnologicas</p>
+
+                <p class="">Desde mis 15 años empece a estudiar programción en mi colegio en convenio con el SENA. Desde entonces he
+                    aprendido a como desarrollar aplicaciones, uno de mis lenguajes
+                    favoritos del lado del servidor es <b>C#</b> y me llama mucho la atencion trabajar con
+                    <b>Node.js</b> ya que se me ha hecho muy facil de aprender.</p>
+
+                <p class="">Me gusta mucho aprender cosas nuevas tanto de internet como de mis compañeros y colegas, actualmente
+                    estoy realizando un curso de programcion Fullstack, donde he aprendido muchas cosas nuevas</p>
+            </div>
+            <div class="section imagen col xl5 l5 m12 s12">
+                <img class="responsive-img" src="img/visa.jpg" alt="Imagen presentacion">
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer teal ">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Redes</h5>
+                    <p class="grey-text text-lighten-4">Aqui podras econtrar mis redes sociales.</p>
+                    <ul class="redes">
+                        <li class="redS"><a class="grey-text text-lighten-3" href="https://www.facebook.com/kevin.I.zarate.37"><img src="icons/facebook.png" alt="icono facebook"></a></li>
+                        <li class="redS"><a class="grey-text text-lighten-3" href="https://twitter.com/julianzarate13"><img src="icons/twitter.png" alt="icono twitter"></a></li>
+                        <li class="redS"><a class="grey-text text-lighten-3" href="https://www.instagram.com/hi_im_kevin32/"><img src="icons/instagram.png" alt="icono instagram"></a></li>
+                        <li class="redS"><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/kevin-zarate-7666a0158/"><img src="icons/linkedin.png"alt="icono linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Acerca de</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Terminos y condiciones</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Politicas de privacidad</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Derechos de autor</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Copyright - Kevin Zarate
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            let elems = document.querySelectorAll('.parallax');
+            let instances = M.Parallax.init(elems);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            let elems = document.querySelectorAll('.sidenav');
+            let instances = M.Sidenav.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+        // let parrallaxContainer = document.getElementsByClassName('parallax-container')[0];
+        // parrallaxContainer.style.height = screen.height - 70 + "px"
+
+        let contenido = document.getElementsByClassName('contenido')[0];
+       
+
+        window.onscroll = function () { myFunction() };
+
+        let navbar = document.getElementById("nav");
+        var altura = screen.height - 75;
+
+
+        function myFunction() {
+            if (window.pageYOffset >= altura) {
+                navbar.classList.add("teal");
+            } else {
+                navbar.classList.remove("teal");
+            }
+        }
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+</body>
+
+</html>

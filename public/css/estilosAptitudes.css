@@ -1,0 +1,44 @@
+body {
+    font-family: 'Prime';
+    white-space: normal;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 18px;
+    height: 100vh;
+}
+
+.barra {
+    height: 45px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.miniB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.f {
+    border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+}
+.l{
+    border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    -webkit-border-radius: 0px 5px 5px 0px;
+}
+
+@media only screen and (max-width: 720px) {
+    .miniB {
+        border: 0px;
+        font-size: 12px;
+        height: 27px;
+        align-items: center;
+    }
+}
